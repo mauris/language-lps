@@ -1,0 +1,245 @@
+'fileTypes': [
+  'lps'
+]
+'firstLineMatch': '(:-|-->)'
+'name': 'LPS'
+'patterns': [
+  {
+    'match': "\\b0'.\\b"
+    'name': 'constant.numeric.lps'
+  }
+  {
+    'begin': '\''
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.lps'
+    'end': '\''
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.lps'
+    'name': 'string.quoted.single.lps'
+    'patterns': [
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escape.lps'
+      }
+      {
+        'match': '\'\''
+        'name': 'constant.character.escape.quote.lps'
+      }
+    ]
+  }
+  {
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.lps'
+    'end': '"'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.lps'
+    'name': 'string.quoted.double.lps'
+    'patterns': [
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escape.lps'
+      }
+      {
+        'match': '""'
+        'name': 'constant.character.escape.quote.lps'
+      }
+    ]
+  }
+  {
+    'match': '\\b[a-z][a-zA-Z0-9_]*(?![(])\\b'
+    'name': 'string.unquoted.atom.lps'
+  }
+  {
+    'begin': '/\\*'
+    'captures':
+      '0':
+        'name': 'punctuation.definition.comment.lps'
+    'end': '\\*/'
+    'name': 'comment.block.lps'
+  }
+  {
+    'begin': '(^[ \\t]+)?(?=%)'
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.whitespace.comment.leading.lps'
+    'end': '(?!\\G)'
+    'patterns': [
+      {
+        'begin': '%'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.comment.lps'
+        'end': '\\n'
+        'name': 'comment.line.percentage.lps'
+      }
+    ]
+  }
+  {
+    'begin': '(^[ \\t]+)?(?=#)'
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.whitespace.comment.leading.lps'
+    'end': '(?!\\G)'
+    'patterns': [
+      {
+        'begin': '#'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.comment.lps'
+        'end': '\\n'
+        'name': 'comment.line.percentage.lps'
+      }
+    ]
+  }
+  {
+    'begin': '(^[ \\t]+)?(?=//)'
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.whitespace.comment.leading.lps'
+    'end': '(?!\\G)'
+    'patterns': [
+      {
+        'begin': '//'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.comment.lps'
+        'end': '\\n'
+        'name': 'comment.line.percentage.lps'
+      }
+    ]
+  }
+  {
+    'match': '<-'
+    'name': 'keyword.operator.definition.lps'
+  }
+  {
+    'match': '->'
+    'name': 'keyword.operator.definition.lps'
+  }
+  {
+    'match': '\\.'
+    'name': 'punctuation.separator.statement.lps'
+  }
+  {
+    'match': ','
+    'name': 'punctuation.separator.and.lps'
+  }
+  {
+    'match': ';'
+    'name': 'punctuation.separator.or.lps'
+  }
+  {
+    'match': '!'
+    'name': 'punctuation.separator.not.lps'
+  }
+  {
+    'match': 'not'
+    'name': 'support.constant.not.lps'
+  }
+  {
+    'match': '@<'
+    'name': 'keyword.operator.alphabeticallylt.lps'
+  }
+  {
+    'match': '@>'
+    'name': 'keyword.operator.alphabeticallygt.lps'
+  }
+  {
+    'match': '@='
+    'name': 'keyword.operator.alphabeticallyeq.lps'
+  }
+  {
+    'match': '!='
+    'name': 'keyword.operator.notequal.lps'
+  }
+  {
+    'match': '=='
+    'name': 'keyword.operator.equal.lps'
+  }
+  {
+    'match': '<='
+    'name': 'keyword.operator.le.lps'
+  }
+  {
+    'match': '<'
+    'name': 'keyword.operator.lt.lps'
+  }
+  {
+    'match': '>='
+    'name': 'keyword.operator.ge.lps'
+  }
+  {
+    'match': '>'
+    'name': 'keyword.operator.gt.lps'
+  }
+  {
+    'match': '='
+    'name': 'keyword.operator.unify.lps'
+  }
+  {
+    'match': '\\+'
+    'name': 'keyword.operator.plus.lps'
+  }
+  {
+    'match': '-'
+    'name': 'keyword.operator.minus.lps'
+  }
+  {
+    'match': '\\*'
+    'name': 'keyword.operator.times.lps'
+  }
+  {
+    'match': '/'
+    'name': 'keyword.operator.divide.lps'
+  }
+  {
+    'match': '\\|'
+    'name': 'keyword.operator.pipe.prolog'
+  }
+  {
+    'match': '\\b\\d+(\\.\\d+)?([eE][-+]?\\d+)?\\b'
+    'name': 'constant.numeric.lps'
+  }
+  {
+    'match': '\\b0b[01]+\\b'
+    'name': 'constant.numeric.lps'
+  }
+  {
+    'match': '\\b0o[0-7]+\\b'
+    'name': 'constant.numeric.lps'
+  }
+  {
+    'match': '\\b0x[0-9a-fA-F]+\\b'
+    'name': 'constant.numeric.lps'
+  }
+  {
+    'match': '\\bconsult\(\\w*\)\\b'
+    'name': 'keyword.control.consult.lps'
+  }
+  {
+    'match': '\\b(call|once)\(\\w*\)\\b'
+    'name': 'keyword.control.call.lps'
+  }
+  {
+    'match': '\\b(?:maxTime|fluent|fluents|action|actions|event|events|initially|terminates|initiates|updates|observe)\(\\w*\)\\b'
+    'name': 'support.function.lps'
+  }
+  {
+    'match': '\\b[A-Z][a-zA-Z0-9_]*\\b'
+    'name': 'variable.other.lps'
+  }
+  {
+    'match': '\\b_[a-zA-Z0-9_]+\\b'
+    'name': 'variable.other.singleton.lps'
+  }
+  {
+    'match': '\\b[a-z][a-zA-Z0-9_]*(?=[(])\\b'
+    'name': 'entity.name.function.declaration.lps'
+  }
+]
+'scopeName': 'source.lps'

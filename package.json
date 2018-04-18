@@ -1,6 +1,6 @@
 {
   "name": "language-lps",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "LPS language support for Atom",
   "repository": {
     "type": "git",

@@ -1,0 +1,48 @@
+'.source.lps':
+  'Fact':
+    'prefix': 'fact'
+    'body': '${1:functor_name}(${2:argument}).'
+  'Not':
+    'prefix': 'not'
+    'body': 'not ${1:literal}'
+  'Constraint':
+    'prefix': 'constraint'
+    'body': '<- ${1:conditions}.'
+  'Goal':
+    'prefix': 'goal'
+    'body': '${1:conclusion} <-\n\t${2:conditions}.'
+  'Rule':
+    'prefix': 'rule'
+    'body': '${1:antecedent} ->\n\t${2:consequent}.'
+    
+  'Terminates':
+    'prefix': 'terminates'
+    'body': 'terminates(${1:action}, ${2:fluent}).'
+  'Initiates':
+    'prefix': 'initiates'
+    'body': 'initiates(${1:action}, ${2:fluent}).'
+  'Observe':
+    'prefix': 'observe'
+    'body': 'observe(${1:event}, ${2:startTime}, ${3: endTime}).'
+    
+  'Max Time':
+    'prefix': 'maxTime'
+    'body': 'maxTime(${1:time}).'
+    
+  'Fluent':
+    'prefix': 'fluent'
+    'body': 'fluent(${1:fluent}).'
+  'Fluents':
+    'prefix': 'fluents'
+    'body': 'fluents([\n\t${1:fluents}\n]).'
+    
+  'Action':
+    'prefix': 'action'
+    'body': 'action(${1:action}).'
+  'Actions':
+    'prefix': 'actions'
+    'body': 'actions([\n\t${1:actions}\n]).'
+    
+  'Start Block Comment':
+    'prefix': '/*'
+    'body': '/*\n $1\n */$0'

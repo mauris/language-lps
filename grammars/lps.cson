@@ -199,7 +199,7 @@
   }
   {
     'match': '\\|'
-    'name': 'keyword.operator.pipe.prolog'
+    'name': 'keyword.operator.pipe.lps'
   }
   {
     'match': '\\b\\d+(\\.\\d+)?([eE][-+]?\\d+)?\\b'

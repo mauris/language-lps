@@ -21,9 +21,15 @@
   'Initiates':
     'prefix': 'initiates'
     'body': 'initiates(${1:action}, ${2:fluent}).'
+  'Updates':
+    'prefix': 'updates'
+    'body': 'updates(${1:action}, ${2:oldFluent}, ${3: newFluent}).'
   'Observe':
     'prefix': 'observe'
     'body': 'observe(${1:event}, ${2:startTime}, ${3: endTime}).'
+  'Initially':
+    'prefix': 'initially'
+    'body': 'initially([\n\t${1:fluents}\n]).'
     
   'Max Time':
     'prefix': 'maxTime'

@@ -1,0 +1,4 @@
+'.source.lps':
+  'editor':
+    'commentStart': '% '
+    'increaseIndentPattern': '(<-|->)\\s*$'

@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/mauris/language-lps"
   },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
   "bugs": {
     "url": "https://github.com/mauris/language-lps/issues"
   }

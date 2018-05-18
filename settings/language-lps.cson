@@ -2,3 +2,4 @@
   'editor':
     'commentStart': '% '
     'increaseIndentPattern': '(<-|->)\\s*$'
+    'decreaseIndentPattern': '.$'

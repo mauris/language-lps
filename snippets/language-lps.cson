@@ -54,7 +54,7 @@
     'body': '/*\n $1\n */$0'
   'Expectation':
     'prefix': 'expect',
-    'body': 'expect(${1:type}, ${2: startTime}, ${3:endTime}, ${4:literal})'
+    'body': 'expect(${1:type}, ${2: startTime}, ${3:endTime}, ${4:literal}).\n'
   'Expect Number Of':
     'prefix': 'expect_num_of',
-    'body': 'expect_num_of(${1:type}, ${2: startTime}, ${3:endTime}, ${4:num})'
+    'body': 'expect_num_of(${1:type}, ${2: startTime}, ${3:endTime}, ${4:num}).\n'

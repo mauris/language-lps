@@ -52,3 +52,9 @@
   'Start Block Comment':
     'prefix': '/*'
     'body': '/*\n $1\n */$0'
+  'Expectation':
+    'prefix': 'expect',
+    'body': 'expect(${1:type}, ${2: startTime}, ${3:endTime}, ${4:literal})'
+  'Expect Number Of':
+    'prefix': 'expect_num_of',
+    'body': 'expect_num_of(${1:type}, ${2: startTime}, ${3:endTime}, ${4:num})'

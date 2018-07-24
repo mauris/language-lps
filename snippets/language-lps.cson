@@ -15,6 +15,10 @@
     'prefix': 'rule'
     'body': '${1:antecedent} ->\n\t${2:consequent}.'
     
+  'Consult':
+    'prefix': 'consult'
+    'body': 'consult(\'${1:file}\').'
+    
   'Terminates':
     'prefix': 'terminates'
     'body': 'terminates(${1:action}, ${2:fluent}).'

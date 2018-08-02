@@ -2,4 +2,4 @@
   'editor':
     'commentStart': '% '
     'increaseIndentPattern': '(<-|->|\\[|\\()\\s*$'
-    'decreaseIndentPattern': '(\\.|\\]|\\))$'
+    'decreaseIndentPattern': '^\\s*([\\]\\)]+)$'

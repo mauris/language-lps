@@ -1,5 +1,5 @@
 '.source.lps':
   'editor':
     'commentStart': '% '
-    'increaseIndentPattern': '(<-|->|\\[|\\()\\s*$'
+    'increaseIndentPattern': '(^\\S.*\\),|(<-|->|\\[|\\())\\s*$'
     'decreaseIndentPattern': '^\\s*(([\\]\\)]+\\.{0,1})|\\.)$'

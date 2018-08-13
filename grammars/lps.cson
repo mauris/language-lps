@@ -51,10 +51,6 @@
     ]
   }
   {
-    'match': '\\b[a-z][a-zA-Z0-9_]*(?![(])\\b'
-    'name': 'string.unquoted.atom.lps'
-  }
-  {
     'begin': '/\\*'
     'captures':
       '0':
@@ -134,8 +130,12 @@
     'name': 'punctuation.separator.not.lps'
   }
   {
-    'match': 'not'
-    'name': 'support.constant.not.lps'
+    'match': '\\b(?:true|not)\\b'
+    'name': 'keyword.operator.logic.lps'
+  }
+  {
+    'match': '\\b(?:from|to|at)\\b'
+    'name': 'keyword.control.timing.lps'
   }
   {
     'match': '@<'
@@ -216,6 +216,10 @@
   {
     'match': '\\b(?:maxTime|consult|fluent|fluents|action|actions|event|events|initially|terminates|initiates|updates|observe)\(\\w*\)\\b'
     'name': 'keyword.control.lps'
+  }
+  {
+    'match': '\\b[a-z][a-zA-Z0-9_]*(?![(])\\b'
+    'name': 'string.unquoted.atom.lps'
   }
   {
     'match': '\\b[A-Z][a-zA-Z0-9_]*\\b'

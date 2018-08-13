@@ -214,8 +214,12 @@
     'name': 'constant.numeric.lps'
   }
   {
-    'match': '\\b(?:maxTime|consult|fluent|fluents|action|actions|event|events|initially|terminates|initiates|updates|observe)\(\\w*\)\\b'
+    'match': '\\b(?:maxTime|cycleInterval|continuousExecution|expect|expect_num_of|consult|fluent|fluents|action|actions|event|events|initially|terminates|initiates|updates|observe)\(\\w*\)\\b'
     'name': 'keyword.control.lps'
+  }
+  {
+    'match': '\\b(?:between|atleast|atmost|min|max|at_least|at_most|equal|eq|not_eq|not_equal|notequal)\(\\w*\)\\b'
+    'name': 'keyword.operator.numerictesting.lps'
   }
   {
     'match': '\\b[a-z][a-zA-Z0-9_]*(?![(])\\b'

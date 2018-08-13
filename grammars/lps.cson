@@ -109,7 +109,7 @@
           '0':
             'name': 'punctuation.definition.comment.lps'
         'end': '\\n'
-        'name': 'comment.line.percentage.lps'
+        'name': 'comment.line.doubleslash.lps'
       }
     ]
   }
